@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:group name="checkindategroup">
+    <xs:sequence>
+      <xs:element name="FirstDate" type="xs:date" />
+      <xs:element name="LastDate" type="xs:date" />
+    </xs:sequence>
+  </xs:group>
+  <xs:complexType name="staysincludingrangetype">
+    <xs:sequence>
+      <xs:element name="FirstDate" type="xs:date" />
+      <xs:element name="LastDate" type="xs:date" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="staytype">
+    <xs:sequence>
+      <xs:element name="CheckInDate" type="xs:date" />
+      <xs:element name="LengthOfStay">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+            <xs:maxInclusive value="14" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:group name="itemmodechoicegroup">
+    <xs:choice>
+      <xs:group ref="checkindategroup" />
+      <xs:element name="StaysIncludingRange" type="staysincludingrangetype" />
+      <xs:element name="Stay" type="staytype"></xs:element>
+    </xs:choice>
+  </xs:group>
+  <xs:element name="Hint">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Item" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Property" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+              <xs:group ref="itemmodechoicegroup" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Context" minOccurs="0" type="xs:string" />
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
