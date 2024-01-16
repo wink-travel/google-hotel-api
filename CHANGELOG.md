@@ -2,6 +2,47 @@
 
 Changelog of google-hotel-api.
 
+## 0.0.4 (2024-01-16)
+
+### Other changes
+
+**Merge branch 'release/0.0.4'**
+
+
+[bfc42](https://github.com/wink-travel/google-hotel-api/commit/bfc4217cd412002) Bjorn Harvold *2024-01-16 15:02:00*
+
+**Update versions for release**
+
+
+[26f7d](https://github.com/wink-travel/google-hotel-api/commit/26f7dd1ff77e03b) Bjorn Harvold *2024-01-16 15:01:48*
+
+**:twisted_rightwards_arrows: doc: merged CHANGELOG.md from master into develop branch**
+
+
+[35549](https://github.com/wink-travel/google-hotel-api/commit/35549d8c34e6eb9) Bjorn Harvold *2024-01-16 10:44:01*
+
+**Update for next development version**
+
+
+[73a2a](https://github.com/wink-travel/google-hotel-api/commit/73a2a51cabc2d31) Bjorn Harvold *2024-01-16 10:43:43*
+
+**Merge tag '0.0.3' into develop**
+
+* Tag release 
+
+[b7dad](https://github.com/wink-travel/google-hotel-api/commit/b7dadfe59aa2ac0) Bjorn Harvold *2024-01-16 10:43:41*
+
+
+## v0.0.3 (2024-01-16)
+
+### Other changes
+
+**:memo: doc: Updated CHANGELOG.md...**
+
+
+[a4441](https://github.com/wink-travel/google-hotel-api/commit/a4441d44e3b7dbe) Bjorn Harvold *2024-01-16 10:43:56*
+
+
 ## 0.0.3 (2024-01-16)
 
 ### Other changes
