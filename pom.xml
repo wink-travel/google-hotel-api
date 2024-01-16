@@ -9,8 +9,8 @@
     </parent>
     <groupId>travel.wink</groupId>
     <artifactId>google-hotel-apis</artifactId>
-    <version>0.0.3</version>
-    <packaging>jar</packaging>
+    <version>0.0.4</version>
+    <packaging>pom</packaging>
     <name>Google Hotel APIs Java</name>
     <description>Java library for Google Hotel APIs schema.</description>
 
@@ -62,6 +62,14 @@
         <sonatypeOssDistMgmtSnapshotsUrl>https://s01.oss.sonatype.org/</sonatypeOssDistMgmtSnapshotsUrl>
         <versions.maven.plugin>2.16.2</versions.maven.plugin>
     </properties>
+
+    <modules>
+        <module>hint</module>
+        <module>hotel-list</module>
+        <module>landing-pages</module>
+        <module>query</module>
+        <module>transaction</module>
+    </modules>
 
     <build>
         <defaultGoal>compile</defaultGoal>

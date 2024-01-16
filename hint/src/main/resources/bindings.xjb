@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jxb:bindings xmlns:jxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="3.0">
+    <jxb:bindings schemaLocation="hint.xsd" node="/xs:schema">
+        <jxb:schemaBindings>
+            <jxb:package name="travel.wink.api.google.hotel.hint"/>
+        </jxb:schemaBindings>
+    </jxb:bindings>
+</jxb:bindings>
