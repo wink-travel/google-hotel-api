@@ -9,7 +9,7 @@
     </parent>
     <groupId>travel.wink</groupId>
     <artifactId>google-hotel-apis</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>jar</packaging>
     <name>Google Hotel APIs Java</name>
     <description>Java library for Google Hotel APIs schema.</description>
@@ -136,6 +136,7 @@
                     <serverId>ossrh</serverId>
                     <nexusUrl>${sonatypeOssDistMgmtSnapshotsUrl}</nexusUrl>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    <keepStagingRepositoryOnCloseRuleFailure>true</keepStagingRepositoryOnCloseRuleFailure>
                 </configuration>
                 <executions>
                     <execution>
